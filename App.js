@@ -1,6 +1,6 @@
-import React from "react";
-import { SafeAreaView } from "react-native";
-import RGBConverterScreen from "./src/components/screens";
+import React from 'react';
+import { SafeAreaView } from 'react-native';
+import RGBConverterScreen from './src/screens/RGBConverterScreen';  // Importando a tela principal
 
 const App = () => {
   return (
@@ -9,5 +9,6 @@ const App = () => {
     </SafeAreaView>
   );
 };
+
 
 export default App;
