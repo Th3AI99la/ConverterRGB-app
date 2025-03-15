@@ -1,3 +1,5 @@
+// TELA PRINCIPAL DO APP
+
 import React from 'react';
 import { SafeAreaView } from 'react-native';
 import RGBConverterScreen from './src/screens/RGBConverterScreen';  // Importando a tela principal
