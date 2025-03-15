@@ -2,10 +2,10 @@
 
 import React, { useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import RGBInput from '../components/RGBInput';  // Importando o componente RGBInput
+import RGBInput from '../components/RGBInput';  // Import do componente RGBInput
 
 const RGBConverterScreen = () => {
-  // Definindo estados para armazenar os valores RGB
+  // Definindo estados para armazenar os valores RGB = 0
   const [red, setRed] = useState(0);
   const [green, setGreen] = useState(0);
   const [blue, setBlue] = useState(0);
@@ -25,8 +25,8 @@ const RGBConverterScreen = () => {
 
       {/* Texto exibindo a cor RGB atual */}
       <Text style={styles.result}>Cor de fundo: RGB({red}, {green}, {blue})</Text>
-
-      {/* Exibir a cor de fundo em um círculo */}
+  
+      {/* TELA DO MINI CIRCULO */}
       <View style={styles.circleContainer}>
         <View style={[styles.circle, { backgroundColor: getBackgroundColor() }]} />
       </View>
@@ -36,27 +36,27 @@ const RGBConverterScreen = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,  // Faz com que o contêiner ocupe toda a tela
-    justifyContent: 'center',  // Centraliza o conteúdo verticalmente
-    alignItems: 'center',  // Centraliza o conteúdo horizontalmente
-    padding: 20,  // Adiciona um preenchimento ao redor do contêiner
-    backgroundColor: '#8181814E',  // Define a cor de fundo do contêiner
+    flex: 1,  
+    justifyContent: 'center', 
+    alignItems: 'center',  
+    padding: 20,  
+    backgroundColor: '#8181814E',
   },
   title: {
-    fontSize: 40,  // Define o tamanho da fonte do título
-    fontWeight: 'bold',  // Define o peso da fonte como negrito
-    marginBottom: 20,  // Adiciona uma margem inferior ao título
-    padding: 10,  // Adiciona um preenchimento ao redor do título
-    borderRadius: 10,  // Adiciona bordas arredondadas ao título
+    fontSize: 40, 
+    fontWeight: 'bold', 
+    marginBottom: 20, 
+    padding: 10,  
+    borderRadius: 10,  
   },
   result: {
-    fontSize: 20,  // Define o tamanho da fonte do texto de resultado
-    fontWeight: 'bold',  // Define o peso da fonte como negrito
-    padding: 10,  // Adiciona um preenchimento ao redor do título
-    borderRadius: 10,  // Adiciona bordas arredondadas ao título
+    fontSize: 20,  
+    fontWeight: 'bold',  
+    padding: 10,  
+    borderRadius: 10,  
   },
 
-  // Estilos para o contêiner do círculo e o círculo
+  // ESTILO DO MINI CIRCULO
   circleContainer: {
     marginTop: 20,  // Adiciona uma margem superior ao contêiner do círculo
     alignItems: 'center',  // Centraliza o círculo horizontalmente
@@ -72,6 +72,7 @@ const styles = StyleSheet.create({
     padding: 100,  // Adiciona um preenchimento ao redor do círculo
 
   },
+  // ESTILO PARA AS LABELS DE ENTRADA
   labelRed: {
     color: 'red',  // Define a cor do texto como vermelho
   },
